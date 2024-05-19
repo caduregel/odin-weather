@@ -8,7 +8,7 @@ export const getWeatherData = async (location) => {
         const requestURL = `${baseURL}/forecast.json?key=${key}&q=${location}&days=7`
         const response = await fetch(requestURL, { mode: "cors"})
         const result = await response.json()
-
+        console.log(requestURL)
         const data = extractWeatherData(result)
         console.log(data)
         return data
