@@ -105,6 +105,8 @@ body {
     body {
         background-image: url('https://w0.peakpx.com/wallpaper/924/835/HD-wallpaper-above-the-clouds-blue-sky-sky-sun-sunny-sunshine.jpg');
         background-size: 100vw 130vh;
+        background-attachment: fixed;
+        background-position:center;
     }
 
     #location-input > label {
