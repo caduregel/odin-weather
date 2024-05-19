@@ -60,5 +60,5 @@ export const createCurrent = (data) => {
     temp.textContent = data.current.temperature.celsius + '°'
 
     const condition = document.querySelector('#condition')
-    condition.textContent = data.current.condition1
+    condition.textContent = data.current.condition
 }
