@@ -1,7 +1,7 @@
 import { extractWeatherData } from "./extractWeatherData"
 
 const key = '9915c10ff5094143910145711241905'
-const baseURL = 'http://api.weatherapi.com/v1'
+const baseURL = 'https://api.weatherapi.com/v1'
 
 export const getWeatherData = async (location) => {
     try {
