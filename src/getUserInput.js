@@ -12,3 +12,12 @@ export const getUserInput = async () => {
         createCurrent(forecastData)
     })
 }
+
+export const onsubmit = async (event) => {
+    event.preventDefault()
+    const input = document.querySelector('#input').value.toString()
+    // console.log(input)
+    const forecastData = await getWeatherData(input)
+    createForecast(forecastData.forecast)
+    createCurrent(forecastData)
+}
