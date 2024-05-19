@@ -1,0 +1,149 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-image: url("https://papers.co/wallpaper/papers.co-ne46-sky-blue-cloud-nature-sunny-summer-35-3840x2160-4k-wallpaper.jpg");
+    background-size: 100vw 130vh;
+    color: white;
+    caret-color: transparent;
+}
+
+
+#location-input {
+    background-color: rgb(29, 78, 216, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#input {
+    font-size: 15px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    caret-color: black;
+}
+
+#enter-input {
+    background-color: #1c71d8;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    height: 30px;
+    width: 80px;
+    cursor: pointer;
+}
+
+/*  */
+
+#current {
+    text-align: center;
+    font-weight:900;
+}
+
+#current >h1 {
+    font-size: 50px;
+    margin: 5px;
+}
+#current > h2 {
+    font-size: 40px;
+    margin-top: 10;
+    margin-bottom: 0px;
+}
+
+#current > p{
+    font-size: 30px;
+    margin: 5px;
+}
+
+/* Forecast1 */
+
+#forecast {
+    background-color: rgb(29, 78, 216, 0.6);
+    border-radius: 10px;
+    width: 25vw;
+    padding: 5px 20px;
+    margin-top: 10px;
+}
+
+.day {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top: 2px solid #fff;
+    justify-content: space-between;
+}
+
+.weekday {
+    font-size: 25px;
+    font-weight: 800;
+    margin: 0px;
+}
+
+.rain-chance {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+}
+
+.rain-chance > p{
+    font-size: 22px;
+    margin: 0px 10px 0px 10px;
+}
+
+.rain-chance > img{
+    height: 30px;
+    width: 30x;
+    margin: 0px;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        background-image: url('https://w0.peakpx.com/wallpaper/924/835/HD-wallpaper-above-the-clouds-blue-sky-sky-sun-sunny-sunshine.jpg');
+        background-size: 100vw 130vh;
+    }
+
+    #location-input > label {
+        display: none;
+    }
+
+    #forecast {
+        width: 80vw;
+    }
+
+    .day {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-top: 2px solid #fff;
+        justify-content: space-between;
+    }
+    
+    .weekday {
+        font-size: 18px;
+        font-weight: 800;
+        margin: 0px;
+    }
+    
+    .rain-chance {
+        display: flex;
+        align-items: center;
+        margin: 0px;
+    }
+    
+    .rain-chance > p{
+        font-size: 15px;
+        margin: 0px 55px 0px 5px;
+    }
+    
+    .rain-chance > img{
+        height: 20px;
+        width: 20px;
+        margin: 0px;
+    }
+}
+

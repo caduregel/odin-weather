@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather</title>
+    <title>sunly</title>
+    <!-- Disable favicon request -->    
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
 </head>
+
 <body>
-    
+    <form id="location-input">
+        <label for="">Enter Location:</label>
+        <input type="text" id="input">
+        <input type="submit" id="enter-input" value="enter">
+    </form>
+    <div id="content">
+        <div id="current">
+            <h2 id="country"></h2>
+            <h1 id="current-temp"></h1>
+            <p id="condition"></p>
+        </div>
+        <div id="forecast">
+            <p>7-DAY FORECAST</p>
+            <div id="days">
+                <!-- <div class="day">
+                    <p class="weekday"></p>
+                    <div class="rain-chance">
+                        <img src="https://www.iconpacks.net/icons/2/free-raindrop-icon-1580-thumb.png" alt="">
+                        <p></p>
+                    </div>
+                    <div id="min-max-temp">
+                        <p>13&deg;</p>
+                        <p>;</p>
+                    </div>
+                </div> -->
+            </div>
+
+        </div>
 </body>
+
 </html>
